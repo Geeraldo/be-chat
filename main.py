@@ -14,7 +14,7 @@ app = FastAPI()
 
 @app.on_event("startup")
 async def startup_db_client():
-    app.mongodb_client = AsyncIOMotorClient('mongodb+srv://gee:WC86EN6TT3K7cnyv@cluster0.ibe0l6m.mongodb.net/')
+    app.mongodb_client = AsyncIOMotorClient('mongodb client srv')
     app.mongodb = app.mongodb_client['aria_health']
 
 @app.on_event("shutdown")
