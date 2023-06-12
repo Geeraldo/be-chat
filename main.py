@@ -23,4 +23,4 @@ async def shutdown_db_client():
 
 app.include_router(user_router, tags=["users"], prefix="/user")
 app.include_router(room_router, tags=["room"], prefix="/room")
-# app.include_router(chat_router, tags=["chat"], prefix="/chat")
+app.include_router(chat_router, tags=["chat"], prefix="/chat")
